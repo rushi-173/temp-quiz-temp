@@ -45,10 +45,10 @@ export type initialStateType = {
   data: Quiz;
 };
 
-type CxtState = {
+interface CxtState {
   state: initialStateType;
   dispatch: React.Dispatch<any>;
-};
+}
 
 type ActionType =
   | { type: "SET_DATA"; payload: { data: any } }
@@ -58,7 +58,7 @@ type ActionType =
   | { type: "WRONG_ANS"; payload: { score: number } }
   | { type: "TOGGLE_DISABLE" };
 
-export const QuizContext = createContext<CxtState | null>(null);
+export const QuizContext = createContext({} as CxtState);
 
 export function redcFunc(
   redcState: initialStateType,
