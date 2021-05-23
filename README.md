@@ -1,2 +1,2 @@
-# temp-quiz-temp
+# Quiz-App-Typescript
 Created with CodeSandbox
