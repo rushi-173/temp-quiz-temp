@@ -58,7 +58,7 @@ type ActionType =
   | { type: "WRONG_ANS"; payload: { score: number } }
   | { type: "TOGGLE_DISABLE" };
 
-export const QuizContext = createContext<CxtState>({} as CxtState);
+export const QuizContext = createContext<CxtState | null>(null);
 
 export function redcFunc(
   redcState: initialStateType,
