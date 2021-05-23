@@ -45,10 +45,10 @@ export type initialStateType = {
   data: Quiz;
 };
 
-interface CxtState {
+type CxtState = {
   state: initialStateType;
   dispatch: React.Dispatch<any>;
-}
+};
 
 type ActionType =
   | { type: "SET_DATA"; payload: { data: any } }
